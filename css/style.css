@@ -1,0 +1,310 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+header{
+    width: 100%;
+    height: 110vh;
+    background-color: 
+    #0f0f37 ;
+}
+nav{
+    display: flex;
+    padding: .5rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+nav>h2{
+    font-size: 3rem;
+    font-family: 'Great Vibes', cursive;
+    background: linear-gradient(to right,rgb(248, 3, 174),rgb(179, 47, 240),rgb(57, 216, 205));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+nav>div{
+    display: flex;
+    gap: 20px;
+
+}
+nav>div a{
+    text-decoration: none;
+    color: white;
+    padding: 2px 10px;
+}
+nav>div a:hover{
+    transform: scale(1.2);
+    border-radius: 5px;
+    background-color: #ff0513;
+    color: black;
+    font-weight: 550;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+header>div{
+    height: 95vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    color: white;
+}
+header>div>:nth-child(1){
+    padding: 2rem 2.5rem;
+    left: 15px;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 60%;
+    top: 50px;
+    gap:20px
+ 
+}
+header>div>:nth-child(1) h1{
+    font-size: 4rem;
+    width: 90%;
+    line-height: 70px;
+    font-weight: 900;
+    background: linear-gradient(to right,rgb(231, 16, 134), rgb(44, 8, 188));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.main-img{
+    position: absolute;
+    right: 40px;;
+   
+    top: 2rem;
+    width:28%;
+    height: 60vh;
+    border-radius: 100%;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header>div>:nth-child(2) img{
+    width: 70%;
+    /* z-index: -1; */
+    position: absolute;
+    bottom: -1.6rem;
+   
+   
+}
+header>div>:nth-child(1) button{
+    padding: .5rem 1.3rem;
+    border-radius: 10px;
+    width: fit-content;
+    background-color: #ff0513;
+    color: white;
+    cursor: pointer;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+header>div>:nth-child(1) button:hover{
+    transform:scale(1.1)
+
+}
+#link-icon{
+    display: flex;
+    gap: 20px;
+}
+#link-icon i{
+    font-size: 1.7rem;
+   
+}
+#link-icon i:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+    color:rgba(227, 68, 33, 0.922);
+}
+#about{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+#about h2{
+    text-align: center;
+    font-size: 2.5rem;
+    border-bottom: 1px solid red ;
+    padding-bottom: 1rem;
+   
+}
+#about>div{
+    /* border: 2px solid blue; */
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+   
+}
+#about>div>:nth-child(1){
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 37%;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 30%);
+    border-radius: 5px;
+    overflow: hidden;
+}
+#about>div>:nth-child(1):hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+#about>div>:nth-child(2){
+    /* border: 2px solid palegreen; */
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding:2rem;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 30%);
+    border-radius: 5px;
+}
+#about>div>:nth-child(2):hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+#about>div>:nth-child(1)> img
+{
+    width: 100%;  
+    height: 100%;  
+}
+#about>div>:nth-child(2)>h4 span{
+    font-size: 1.2rem;
+    color: #ff0513;
+} 
+#about>div>:nth-child(2)>h4{
+    color: rgba(0, 0, 0, 0.906);
+}
+#about>div>:nth-child(2)>p{
+    color: rgb(23, 22, 22);
+}
+#education{
+    border: 2px solid red;
+    width: 100%;
+    height: 70vh;
+}
+#skill{
+    background-color: black;
+     width: 100%;
+     height: 60vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 30px;
+}
+#skill>h2{
+    font-size: 2.6rem;
+    border-bottom: 1px solid;
+    padding-bottom: .5rem;
+    color: white;
+}
+#skill>div{
+     /* border: 2px solid blue; */
+     width: 80%;
+     height: 35vh;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     box-shadow: 0 5px 10px rgb(255 255 255 / 16%);
+}
+#skill>div:hover{
+    box-shadow: rgb(85, 82, 82) 0px 4px 12px;
+}
+#skill>div>div{
+    width: 10vw;
+    height: 80%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+}
+#skill>div>div>div{
+    /* border: 2px solid blue; */
+    height: 20vh;
+    width: 100%;
+    position: absolute;
+    box-shadow: 6px 6px 20px 5px rgb(255 255 255 / 30%) inset, -4px -4px 6px 5px rgb(230 228 228 / 25%) inset;
+}
+#skill>div>div img{
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#skill>div>div>div:hover{
+    transform: translateY(5px);
+}
+#skill>div>div h5{
+    position: absolute;
+    bottom: 0;
+    color: rgb(215, 199, 199);
+}
+#contact{
+    height: 70vh;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+
+}
+#contact>h2{
+    font-size: 2.2rem;
+   
+}
+#contact>h5{
+    font-size: 1.3rem;
+
+}
+#contact>div{
+    /* border: 2px solid blue; */
+    width: 80%;
+    height: 30vh;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+#contact>div>div{
+    /* border: 2px solid green; */
+    height: 100%;
+    width: 20%;
+    /* display: flex; */
+    flex-direction: column;
+    text-align: center;
+    line-height: 2rem;
+    padding: 2rem 1rem;
+
+    box-shadow: 0 5px 10px rgb(255 255 255 / 16%);
+}
+#contact>div i{
+    color: #ff0513;
+    font-size: 1.4rem;
+}
+footer>p{
+    padding: 1rem;
+    text-align: center;
+    background-color: #111111;
+    color: white;
+}
+
+
