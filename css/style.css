@@ -346,10 +346,17 @@ header>div>:nth-child(1) button:hover{
     padding: 1rem;
     width: 100%;
     /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .project>h2{
     text-align: center;
     font-size: 2.3rem;
+    border-bottom: 2px solid;
+    padding: .7rem;
+    width: 16%;
+    font-weight: 800;
     
 }
 .project>div{
