@@ -16,6 +16,11 @@ nav{
     padding: .5rem 2rem;
     justify-content: space-between;
     align-items: center;
+    position:fixed;
+    width: 100%;
+    z-index: 99;
+    background-color: #0f0f37;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 nav>h2{
     font-size: 3rem;
@@ -52,6 +57,7 @@ header>div{
     position: relative;
     justify-content: space-between;
     color: white;
+    top: 40px;
 }
 header>div>:nth-child(1){
     padding: 2rem 2.5rem;
@@ -98,7 +104,8 @@ header>div>:nth-child(2) img{
 header>div>:nth-child(1) button{
     padding: .5rem 1.3rem;
     border-radius: 10px;
-    width: fit-content;
+    width: 10vw;
+    margin-top: 2rem;
     background-color: #ff0513;
     color: white;
     cursor: pointer;
@@ -189,11 +196,6 @@ header>div>:nth-child(1) button:hover{
 #about>div>:nth-child(2)>p{
     color: rgb(23, 22, 22);
 }
-#education{
-    border: 2px solid red;
-    width: 100%;
-    height: 70vh;
-}
 #skill{
     background-color: black;
      width: 100%;
@@ -256,49 +258,186 @@ header>div>:nth-child(1) button:hover{
     color: rgb(215, 199, 199);
 }
 #contact{
-    height: 70vh;
+    height: 105vh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 3rem;
+    color: rgb(208, 202, 202);
+    background-color: 
+    #161d26;
+}
+#contact>h1{
+    text-align: center;
+    font-size: 2rem;
+}
+#contact>h5{
+    text-align: center;
+    font-size: 1rem;
+}
+#contact>div{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+   margin-top: 1.4rem;
+}
+#contact>div>:nth-child(1){
+    width: 35%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 
+    2rem;
+    justify-content: center;
+    padding: 3rem;
+    text-align: end;
+    border-right: 2px solid;
+}
+#contact>div>:nth-child(1)>div{
+    line-height: 2rem;
+
+}
+#contact>div>:nth-child(1)>div i{
+    font-size: 1.2rem;
+    color: #ff0512dd;
+}
+#contact>div>:nth-child(2){
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+
+
+}
+#contact>div>:nth-child(2)>form{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    
+}
+#contact input , textarea{
+    padding: .4rem;
+    outline: none;
+    width: 70%;
+    background-color: rgba(231, 224, 224, 0.518);
+    border-radius: 5px;
+    border: 0;
+}
+#contact input::placeholder{
+    color: white;
+    
+}
+#contact textarea::placeholder{
+    color: white;
+}
+#contact>div>:nth-child(2) button{
+    padding: .6rem 1rem;
+    width: 40%;
+    background-color:   #ff0512dd;
+    border-radius: 5px;
+    color: white;
+    border: none;
+}
+.project{
+    height: 105vh;
+    padding: 1rem;
+    width: 100%;
+    /* border: 2px solid blue; */
+}
+.project>h2{
+    text-align: center;
+    font-size: 2.3rem;
+    
+}
+.project>div{
+    height:85vh;
+    width: 100%;
+    /* border: 2px solid green; */
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+}
+.project>div>div{
     /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    color: white;
+    justify-content: space-between;
+    padding: .6rem;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 30%);
+    border-radius: 10px;
 
 }
-#contact>h2{
-    font-size: 2.2rem;
-   
+.project>div>div:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
-#contact>h5{
-    font-size: 1.3rem;
-
+.project>div>div>:nth-child(1){
+    /* background-color: red; */
+    height: 30%;
+    width: 100%;
 }
-#contact>div{
-    /* border: 2px solid blue; */
-    width: 80%;
-    height: 30vh;
-    margin-top: 10px;
+.project>div>div>:nth-child(1) img{
+    width: 100%;
+}
+.project>div>div>:nth-child(2){
     display: flex;
-    justify-content: space-around;
-}
-#contact>div>div{
-    /* border: 2px solid green; */
-    height: 100%;
-    width: 20%;
-    /* display: flex; */
     flex-direction: column;
-    text-align: center;
-    line-height: 2rem;
-    padding: 2rem 1rem;
-
-    box-shadow: 0 5px 10px rgb(255 255 255 / 16%);
+    gap: 20px;
+    align-items: center;
 }
-#contact>div i{
-    color: #ff0513;
-    font-size: 1.4rem;
+.project>div>div>:nth-child(2) h4{
+    font-size: 1.3rem;
+    text-decoration: underline;
+}
+.project>div>div>:nth-child(3){
+    display: flex;
+    /* border: 2px solid green; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.p-img{
+    display: flex;
+    gap: 10px;
+}    
+.p-img+div{
+    display: flex;
+    gap: .8rem;
+}
+.p-img+div button{
+    border: 2px solid red;
+    padding: .7rem 1.4rem;
+    border-radius: 5px;
+    border: 0;
+    background-color: #cf2d35;
+    font-weight: 550;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.p-img+div button:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+    transform: scale(.93);
+}
+.p-img+div button>a{
+    text-decoration: none;
+    color: white;
+}
+.p-img>div{
+    /* border: 2px solid red; */
+    width: 3rem;
+    height: 8vh;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+}
+.p-img>div:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+    transform: scale(.93);
+}
+.p-img img{
+    width: 100%;
 }
 footer>p{
     padding: 1rem;
