@@ -124,6 +124,10 @@ header>div>:nth-child(1) button:hover{
     font-size: 1.7rem;
    
 }
+#link-icon >a{
+    color: white;
+}
+
 #link-icon i:hover{
     transform: scale(1.3);
     cursor: pointer;
